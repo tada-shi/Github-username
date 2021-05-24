@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #8B8989;
+    color: #8B8989;
+}
+header{
+    text-align: center;
+    margin-top: 15vh;
+}
+.fa-circle-o-notch{
+    margin-top: 5%;
+    color: #DAD7D7;
+    animation: loader 2s 0.1s infinite ease-in;
+}
+@keyframes loader{
+    100% {
+        transform: rotate(360deg);
+      }
+}
+.fa-search{
+    color: whitesmoke;
+    margin-left: 5px;
+}
+.hidden{
+    display: none !important;
+}
+#search-bar{
+    padding: 10px 25px;
+    outline: none;
+    border: none;
+    background: #ADACAC;
+    border-radius: 12px;
+}
+#search-bar:focus{
+    border: none;
+}
+
+/* #D0CFCF	#ADACAC #DAD7D7 #8B8989*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 20% auto;
+    background-color: #ADACAC;
+    width: 50%;
+    margin: 3% 25%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px black;
+}
+.profile{
+    position: relative;
+    height: 19vh;
+    top: 50px;
+    left: 40px;
+    border-radius: 50%;
+    border: 10px solid #8B8989;
+    animation: spin 3s 4s infinite ease-in-out;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.user-info{
+    background: #ADACAC;
+    height: 50vh;
+    margin: 5px;
+    padding: 20px 10px;
+    margin-left: 30px;
+    color: black;
+}
+
+#name, #bio, .repository{
+    display: flex;
+    color: black;
+    align-items: flex-start;
+    margin: 2vh 4vw;
+    background: #ADACAC;
+}
+#followers, #following, #repos{
+    color: black;
+    margin-right: 15%;
+    background: #ADACAC;
+}
+#name{
+    color: #D0CFCF;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 2vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#bio{
+    margin-left: 35px;
+    font-style: oblique;
+}
+#repository{
+    margin: 5px;
+    background-color: #DAD7D7;
+    padding: 5px;
+    border-radius: 12px;
+    display: inline-block;
+}
+.repos-name{
+    margin-top: 3vh;
+    text-align: left;
+    background: #ADACAC;
+}
+.error{
+    color: black;
+    font-weight: bold;
+}

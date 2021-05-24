@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+<header>
+    <form  id='username'>
+        <input type="search" placeholder="Github user" maxlength="15" id='search-bar'>
+        <i class="fa fa-search"></i>
+    </form>
+    <section class="js-search-results">
+        <i class="fa fa-circle-o-notch fa-4x hidden"></i>
+    </section>
+        <div class="grid-container hidden">
+            <img src="" class="profile ">
+            <div class="user-info">
+                <div id="name"></div>
+                <div id="bio"></div>
+                <span id="followers"></span>
+                <span id="following"></span>
+                <span id="repos"></span>
+                <section class="repos-name"></section>
+            </div>
+        </div>
+        <p class="error"></p>
+</header>
+</body>
+<script src="./github.js"></script>
+</html>
